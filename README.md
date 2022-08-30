@@ -63,5 +63,5 @@ Ao utilizar Rest é possível perceber uma melhora nos fluxos. Isso porque as ap
 
 Atualmente, os mais utilizados pelas equipes de desenvolvimento são Json e XML, conforme a tarefa que está sendo executada.
 
-Fonte: Coodesh https://coodesh.com/blog/dicionario/o-que-e-rest/                                                                                                                                                 
+                                                                                                                                              
 --------------------------------------------------------------------------------------------------------------------                                                                                                                                                   
