@@ -1,7 +1,8 @@
 <p align="center"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></p>
 
 # Estudo de desenvolvimento de API Rest com Laravel 9
-
+Neste estudo, utilizei o exemplo de Lojas e Produtos com relacionamento e cardinalidade 1:N (1 para muitos), sendo 1 loja para muitos produtos.
+Através das rotas o usuário que vai consumir a API obtém resultados em Json, True ou False dependendo da rota acessada.
 
 ### C:\laragon\www\API_Rest_Laravel_9 (main)
 ### λ php artisan route:list
