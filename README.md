@@ -1,64 +1,87 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Estudo de desenvolvimento de API Rest com Laravel 9
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### C:\laragon\www\API_Rest_Laravel_9 (main)
+### λ php artisan route:list
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  GET|HEAD        / ..................................................................................................................................................
+  POST            _ignition/execute-solution ........................................... ignition.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionController
+  GET|HEAD        _ignition/health-check ....................................................... ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
+  POST            _ignition/update-config .................................................... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
+  GET|HEAD        api/user ...........................................................................................................................................
+  GET|HEAD        lojas ....................................................................................................... lojas.index › Api\LojaController@index
+  POST            lojas ....................................................................................................... lojas.store › Api\LojaController@store
+  GET|HEAD        lojas/{loja} .................................................................................................. lojas.show › Api\LojaController@show
+  PUT|PATCH       lojas/{loja} .............................................................................................. lojas.update › Api\LojaController@update
+  DELETE          lojas/{loja} ............................................................................................ lojas.destroy › Api\LojaController@destroy
+  GET|HEAD        lojas/{loja}/produtos ........................................................................... lojas.produtos.index › Api\ProdutoController@index
+  POST            lojas/{loja}/produtos ........................................................................... lojas.produtos.store › Api\ProdutoController@store
+  GET|HEAD        lojas/{loja}/produtos/{produto} ................................................................... lojas.produtos.show › Api\ProdutoController@show
+  PUT|PATCH       lojas/{loja}/produtos/{produto} ............................................................... lojas.produtos.update › Api\ProdutoController@update
+  DELETE          lojas/{loja}/produtos/{produto} ............................................................. lojas.produtos.destroy › Api\ProdutoController@destroy
+  GET|HEAD        produtos .............................................................................................. produtos.index › Api\ProdutoController@index
+  POST            produtos .............................................................................................. produtos.store › Api\ProdutoController@store
+  GET|HEAD        produtos/{produto} ...................................................................................... produtos.show › Api\ProdutoController@show
+  PUT|PATCH       produtos/{produto} .................................................................................. produtos.update › Api\ProdutoController@update
+  DELETE          produtos/{produto} ................................................................................ produtos.destroy › Api\ProdutoController@destroy
+  GET|HEAD        sanctum/csrf-cookie .............................................................. sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+                                                                                                                                                   Showing [21] routes
+  <h1>API Rest com Laravel</h1>
 
-## Learning Laravel
+Rotas da API:
+Loja ou Produto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+GET /lojas
+GET /lojas/:id
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+POST /lojas
 
-## Laravel Sponsors
+PUT /lojas/:id
+PATCH /lojas/:id
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+DELETE /lojas/:id
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+--------------------------------------------------------------------------------------------------------------------
+<h2>Conceitos</h2>
+Termo REST significa Representational State Transfer que, em português, é “Transferência de Estado Representacional”.
 
-## Contributing
+Por sua definição, trata-se de um conjunto de princípios e definições necessário para a criação de um projeto com interfaces bem definidas. É uma abstração da arquitetura da Web.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<h2>Como funciona</h2>
+A arquitetura Rest permite a comunicação entre aplicações.
+Quando se abre o navegador, o Rest estabelece uma conexão TCP/IP com o servidor de destino. Ele envia uma requisição GET HTTP a partir do endereço informado.
 
-## Code of Conduct
+Por sua vez, o servidor envia uma resposta HTTP ao navegador. A resposta pode ser em formato padrão HTML, JSON ou apresentar algum tipo de erro.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<h2>Suas principais vantagens</h2>
+Ao utilizar Rest é possível perceber uma melhora nos fluxos. Isso porque as aplicações web que utilizam Rest são mais flexíveis, leves e permitem melhores resultados quando se utiliza metodologia ágil.
 
-## Security Vulnerabilities
+Atualmente, os mais utilizados pelas equipes de desenvolvimento são Json e XML, conforme a tarefa que está sendo executada.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<h2>Diferença entre Rest e Restful</h2>
+Você já deve ter ouvido os termos Rest e Restful e ter ficado em dúvida. Afinal, eles são a mesma coisa? Veja a diferença;
 
-## License
+Rest: é um conjunto de princípios de arquitetura.
+Restful: é uma condição única de aplicar os conceitos de Rest.
+Enquanto o primeiro está voltado à criação de serviços disponibilizados na web, o segundo é aquele que realiza a implementação desse padrão.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<h2>O que é API Rest</h2>
+E como o termo Rest aparece frequentemente associado à API, vamos lembrar alguns conceitos.
+
+API é Application Programming Interface, que utiliza requisições HTTP responsáveis pelas operações básicas necessárias para a manipulação dos dados. Algumas requisições, das quais você certamente já ouviu falar, são:
+
+DELETE: exclui as informações;
+GET: lê os dados no host;
+POST: cria dados no servidor;
+PUT: atualiza os registros.
+
+Dessa maneira, para se dizer que uma API é do tipo Restful, é preciso que a primeira esteja em conformidade, como, por exemplo, com a arquitetura cliente/servidor em dia. Além disso, ter uma interface padronizada.
+
+Em suma, as APIs Rest são mais leves e podem gerar excelentes resultados em aplicações mobile, web e Internet das Coisas.
+
+Fonte: Coodesh https://coodesh.com/blog/dicionario/o-que-e-rest/                                                                                                                                                 
+--------------------------------------------------------------------------------------------------------------------                                                                                                                                                   
