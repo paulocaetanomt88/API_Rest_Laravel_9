@@ -37,11 +37,6 @@ Quando se abre o navegador, o Rest estabelece uma conexão TCP/IP com o servidor
 
 Por sua vez, o servidor envia uma resposta HTTP ao navegador. A resposta pode ser em formato padrão HTML, JSON ou apresentar algum tipo de erro.
 
-<h2>Suas principais vantagens</h2>
-Ao utilizar Rest é possível perceber uma melhora nos fluxos. Isso porque as aplicações web que utilizam Rest são mais flexíveis, leves e permitem melhores resultados quando se utiliza metodologia ágil.
-
-Atualmente, os mais utilizados pelas equipes de desenvolvimento são Json e XML, conforme a tarefa que está sendo executada.
-
 <h2>Diferença entre Rest e Restful</h2>
 Você já deve ter ouvido os termos Rest e Restful e ter ficado em dúvida. Afinal, eles são a mesma coisa? Veja a diferença;
 
@@ -62,6 +57,11 @@ PUT: atualiza os registros.
 Dessa maneira, para se dizer que uma API é do tipo Restful, é preciso que a primeira esteja em conformidade, como, por exemplo, com a arquitetura cliente/servidor em dia. Além disso, ter uma interface padronizada.
 
 Em suma, as APIs Rest são mais leves e podem gerar excelentes resultados em aplicações mobile, web e Internet das Coisas.
+
+<h2>Suas principais vantagens</h2>
+Ao utilizar Rest é possível perceber uma melhora nos fluxos. Isso porque as aplicações web que utilizam Rest são mais flexíveis, leves e permitem melhores resultados quando se utiliza metodologia ágil.
+
+Atualmente, os mais utilizados pelas equipes de desenvolvimento são Json e XML, conforme a tarefa que está sendo executada.
 
 Fonte: Coodesh https://coodesh.com/blog/dicionario/o-que-e-rest/                                                                                                                                                 
 --------------------------------------------------------------------------------------------------------------------                                                                                                                                                   
