@@ -5,28 +5,7 @@
 
 ### C:\laragon\www\API_Rest_Laravel_9 (main)
 ### λ php artisan route:list
-
-  GET|HEAD        / .............................................................................................................
-  POST            _ignition/execute-solution ...... ignition.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionController
-  GET|HEAD        _ignition/health-check .......... ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
-  POST            _ignition/update-config ......... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
-  GET|HEAD        api/user 
-  GET|HEAD        lojas ........................... lojas.index › Api\LojaController@index
-  POST            lojas ........................... lojas.store › Api\LojaController@store
-  GET|HEAD        lojas/{loja} .................... lojas.show › Api\LojaController@show
-  PUT|PATCH       lojas/{loja} .................... lojas.update › Api\LojaController@update
-  DELETE          lojas/{loja} ..................... lojas.destroy › Api\LojaController@destroy
-  GET|HEAD        lojas/{loja}/produtos ............ lojas.produtos.index › Api\ProdutoController@index
-  POST            lojas/{loja}/produtos ................ lojas.produtos.store › Api\ProdutoController@store
-  GET|HEAD        lojas/{loja}/produtos/{produto} ...... lojas.produtos.show › Api\ProdutoController@show
-  PUT|PATCH       lojas/{loja}/produtos/{produto} ....... lojas.produtos.update › Api\ProdutoController@update
-  DELETE          lojas/{loja}/produtos/{produto} ..... lojas.produtos.destroy › Api\ProdutoController@destroy
-  GET|HEAD        produtos ............................ produtos.index › Api\ProdutoController@index
-  POST            produtos ........................... produtos.store › Api\ProdutoController@store
-  GET|HEAD        produtos/{produto} ................. produtos.show › Api\ProdutoController@show
-  PUT|PATCH       produtos/{produto} .................. produtos.update › Api\ProdutoController@update
-  DELETE          produtos/{produto} .................. produtos.destroy › Api\ProdutoController@destroy
-  GET|HEAD        sanctum/csrf-cookie ................. sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show
+![image](https://user-images.githubusercontent.com/55772991/187528954-218a63d9-e6f7-427b-8b0d-b63717ae9fd7.png)
 
 <br>
 <br>
